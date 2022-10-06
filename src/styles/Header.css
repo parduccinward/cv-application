@@ -1,0 +1,14 @@
+.header{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 30px 1fr 30px;
+    height: 100px;
+    background-color: #0B2027;
+    color:#fff;
+}
+
+h1.title{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin:0;
+}
