@@ -7,9 +7,9 @@ class SectionContainer extends Component {
   render(){
     return (
       <div className="section-container">
-          <Section title="Personal information"id="personal-info" icon={fa1}/>
-          <Section title="Educational experience"id="educational-experience" icon={fa2}/>
-          <Section title="Practical experience"id="practical-experience" icon={fa3}/>
+          <Section title="Personal information"id="personal-info" icon={fa1} active={true}/>
+          <Section title="Educational experience"id="educational-experience" icon={fa2} active={false}/>
+          <Section title="Practical experience"id="practical-experience" icon={fa3} active={false}/>
       </div>
     )
   }
