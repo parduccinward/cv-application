@@ -10,9 +10,7 @@ class Section extends Component {
     }
   }
   render(){
-      const id = this.props.id;
-      const title = this.props.title;
-      const icon = this.props.icon;
+      const {id, title, icon, onClick} = this.props;
       let activeStyle;
       if(!this.state.active){
         activeStyle = {
@@ -26,7 +24,7 @@ class Section extends Component {
         };
       }
       return (
-        <div id={id}className="section" style={activeStyle}>
+        <div id={id}className="section" style={activeStyle} onClick={onClick}>
           <FontAwesomeIcon icon={icon}/>
           <p>{title}</p>
         </div>
